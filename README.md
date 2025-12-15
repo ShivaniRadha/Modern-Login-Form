@@ -1,4 +1,4 @@
-                                                              Modern Login Form
+                                                        Modern Login Form
 # Description
 A modern, responsive, and center-aligned login form** built using **HTML, CSS, and JavaScript**. 
 This project is perfect for portfolio use, fresher practice, or demo projects.
