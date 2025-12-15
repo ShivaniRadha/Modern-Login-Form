@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Pastel glass background */
+    background: linear-gradient(135deg,
+            #fbc2eb,
+            #a6c1ee);
+}
+
+
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-card {
+    background: #fff;
+    width: 360px;
+    padding: 2.5rem;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.login-card h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.login-card p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 0.85rem;
+    color: #777;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus+label,
+.input-box input:valid+label {
+    top: -8px;
+    background: #fff;
+    padding: 0 6px;
+    font-size: 0.75rem;
+    color: #667eea;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.options a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+}
+
+.signup-text a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Dark Mode */
+body.dark {
+    background: linear-gradient(135deg, #1e1e2f, #121212);
+}
+
+body.dark .login-card {
+    background: #1f1f2e;
+    color: #fff;
+}
+
+body.dark input {
+    background: #2a2a3d;
+    color: #fff;
+    border-color: #444;
+}
+
+.dark-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
